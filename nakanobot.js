@@ -97,7 +97,7 @@ function response(room,msg,sender,isGroupChat,replier,imageDB) {
   }
   
   try {
- if (msg.indexOf("N중식검색")==0){
+   if (msg.indexOf("N중식검색")==0){
 	var day = new Date(); 
 	 var m = (day.getMonth() + 1); 
 	  var d = day.getDate(); 
@@ -112,15 +112,15 @@ function response(room,msg,sender,isGroupChat,replier,imageDB) {
 
   
   }
-catch(e) {
+  catch(e) {
 	
   replier.reply("학교 정보가 없거나 식단이 없습니다.");
 	
   }
 
-if (msg == "Noff") {
- run=false
-  replier.reply ("이만 자러갈게요오...(꾸물꾸물)");
+  if (msg == "Noff") {
+   run=false
+    replier.reply ("이만 자러갈게요오...(꾸물꾸물)");
 
   }
 
